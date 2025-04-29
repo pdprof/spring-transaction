@@ -8,6 +8,6 @@ USER root
 # RUN dnf install -y make procps-ng net-tools gdb
 COPY --chown=1001:0 config/server.xml /config/
 COPY --chown=1001:0 config/jvm.options /config/
-COPY --chown=1001:0 apps/spring-transaction.war /config/apps/
+COPY --chown=1001:0 apps/spring.transaction.war /config/apps/
 
 USER 1001
